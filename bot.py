@@ -76,13 +76,13 @@ class Bot:
             "fallback": "[pixiv]{}".format(post["title"]),
             "color": "#4385B7",  # pixivカラーの青
             "title": post["title"],
-            "title_link": "http://www.pixiv.net/member_illust.php?mode=medium&illust_id={}".format(post["id"]),
+            "title_link": "https://www.pixiv.net/artworks/{}".format(post["id"]),
             "image_url": post["image_urls"]["px_128x128"],
             "text": "",
         }
         return {
             "username": post["user"]["name"],
-            "icon_url": "http://winapp.jp/wp/wp-content/uploads/2012/11/pixiv-icon.png",
+            "icon_url": "https://www.pixiv.net/favicon.ico",
             "text": "",
             "attachments": [attachment],
         }
